@@ -1,0 +1,9 @@
+<div class="container">
+<% if @model == 'user' %>
+  <h3>Users search for "<%= @content %>"</h3>
+  <%= render 'users', users: @records %>
+<% else @model == 'book' %>
+  <h3>Books search for "<%= @content %>"</h3>
+    <%= render 'books', books: @records %>
+<% end %>
+</div>
